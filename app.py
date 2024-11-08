@@ -6,7 +6,7 @@ from flask_bcrypt import Bcrypt
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'ARK16112540'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://endpointdb:P@ssw0rd@testdb01.postgres.database.azure.com:5432/ldz_db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://endpointdb:ttst_1234@testdb01.postgres.database.azure.com:5432/ldz_db'
 
     bcrypt = Bcrypt()
 
