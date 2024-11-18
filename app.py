@@ -55,6 +55,10 @@ def create_app():
         flash('You have been logged out')
         return redirect(url_for('login'))
 
+    @app.route('/health')
+    def health():
+    return "OK", 200  # Return HTTP 200 OK status for health checks
+
     return app
 
 
